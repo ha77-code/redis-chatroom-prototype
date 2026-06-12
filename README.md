@@ -51,5 +51,39 @@ src/main/java/com/chatroom
 5. 完成管理员功能模块
 6. 完成测试与联调
 
+## 快速启动（打包好的 JAR）
+
+项目已集成内嵌 Redis，无需单独安装 Redis。
+
+### 环境要求
+- JDK 17
+
+### 启动步骤
+1. 打包（代码有修改时）：
+```bash
+mvn clean package -DskipTests
+```
+
+2. 启动：
+```bash
+cd target
+java -jar redis-chatroom-prototype-1.0-SNAPSHOT.jar
+```
+
+3. 打开浏览器访问 **http://localhost:8080/**
+
+### 关闭
+- 关闭浏览器页面
+- 终端按 `Ctrl + C` 停止服务
+
+### 内置账号
+- 管理员：`admin` / `admin123`
+
+### Redis 说明
+- 如果电脑已安装 Redis（端口 6379），应用自动复用
+- 如果未安装，应用内嵌 Redis 自动启动，无需额外配置
+
+---
+
 ## 说明
-项目详细设计见同目录下的 [基于Redis的网络聊天室原型系统设计文档.md](C:\Users\dell\IdeaProjects\redis-chatroom-prototype\基于Redis的网络聊天室原型系统设计文档.md)。
+项目详细设计见同目录下的 [基于Redis的网络聊天室原型系统设计文档.md](基于Redis的网络聊天室原型系统设计文档.md)。
