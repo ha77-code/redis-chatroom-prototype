@@ -3,12 +3,13 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .kotlin
+dist/
+.claude/
+.idea/
+packaging/launcher/build/
+packaging/launcher/*.jar
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
 *.iws
 *.iml
 *.ipr
